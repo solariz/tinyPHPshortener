@@ -1,0 +1,23 @@
+# Ignore temporary and backup files
+*.temp
+*.tmp
+*.old
+*.bak
+
+# Ignore Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bz2
+
+# Ignore log files
+*.log
+
+# Ignore config.php file under .storage/
+.storage/config.php
+
+# Ignore all subdirectories under .storage/
+.storage/*/
+
