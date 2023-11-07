@@ -1,8 +1,8 @@
-<div class="container p-2">
+<div class="container p-2 col-md-4">
 <h1>Simple URL Shortener</h1>
 <p>planetlan simple URL Shortener. Makes long URLs shorter :)</p>
 </div>
-<div class="container bg-dark bg-gradient text-light p-3 shadow-lg rounded">
+<div class="container col-md-4 bg-dark bg-gradient text-light p-3 shadow-lg rounded">
   <div class="col-md-12">
     <label class="form-label">Your Short-URL will expire on: <?=$ExpireDate?></label>
     <div class="input-group">
