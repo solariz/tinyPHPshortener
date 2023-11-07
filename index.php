@@ -27,6 +27,7 @@ if (!file_exists($configFile) || !is_readable($configFile)) {
 } else {
     require_once($configFile);
 }
+require('inc/functions.php');
 
 $ALLOWED = false;
 $clientIP = $_SERVER['REMOTE_ADDR'];
@@ -77,7 +78,6 @@ if ($ALLOWED !== true) {
         }
     }
 }
-require('inc/functions.php');
 include('pages/001-head.php');
 if($ALLOWED === true) {
     $url = trim(urldecode($_POST['url']));
