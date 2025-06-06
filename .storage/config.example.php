@@ -10,6 +10,7 @@ $ipAddresses = array(
     '1234:1234:1234:' // IPv6 example
 );
 // If the IP is not in the whitelist user need to authenticate
+// Set $AUTH = false; to disable authentication
 $AUTH['USER'] = "login";
 $AUTH['PASS'] = "password";  // TODO only store hashed PWD here
 
@@ -23,3 +24,4 @@ $MaxValidityHours = 8640; // if nothing is set when a link is created this will 
 
 $LogFile = $StoragePath."shorturl.log";
 
+$FOOTER = "by tinyPHPshortener";

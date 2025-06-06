@@ -30,19 +30,25 @@ if (!file_exists($configFile) || !is_readable($configFile)) {
 require('inc/functions.php');
 
 $ALLOWED = false;
-$clientIP = $_SERVER['REMOTE_ADDR'];
-if (filter_var($clientIP, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) {
-    // IPv6 address
-    foreach ($ipAddresses as $allowedIP) {
-        if (strpos($clientIP, $allowedIP) === 0) {
-            $ALLOWED = true;
-            break;
-        }
-    }
+
+if($AUTH === false) {
+    $ALLOWED = true;
 } else {
-    // IPv4 address
-    if (in_array($clientIP, $ipAddresses)) {
-        $ALLOWED = true;
+    // Check if the user is in the allowed list
+    $clientIP = $_SERVER['REMOTE_ADDR'];
+    if (filter_var($clientIP, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) {
+        // IPv6 address
+        foreach ($ipAddresses as $allowedIP) {
+            if (strpos($clientIP, $allowedIP) === 0) {
+                $ALLOWED = true;
+                break;
+            }
+        }
+    } else {
+        // IPv4 address
+        if (in_array($clientIP, $ipAddresses)) {
+            $ALLOWED = true;
+        }
     }
 }
 

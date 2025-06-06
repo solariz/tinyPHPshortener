@@ -26,6 +26,9 @@ server {
 }
 ```
 
+In the `.storage` subdir you find a config.example.php copy it to config.php and edit as needed.
+
+
 ### Cleanup and Maintenance
 
 Currently the maint script is not done yet. So I temporary use a cronjob to clean very old stuff from the .storage directory.

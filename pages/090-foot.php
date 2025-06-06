@@ -1,5 +1,5 @@
         <footer class="text-center py-4">
-            <p>&copy; planetlan GmbH</p>
+            <p><?=htmlspecialchars($FOOTER)?></p>
         </footer>
     </div>
     </div>
