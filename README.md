@@ -1,7 +1,7 @@
 # tinyPHPshortener
 A tiny PHP based URL shortener with a flat file structure and basic authentication.
 
-![250606-0956-001](https://github.com/user-attachments/assets/03ae3105-4b59-4f52-8662-76e047aa9be0)
+![250606-1002-001](https://github.com/user-attachments/assets/9ea653bd-1365-4c2b-ab54-c50d5dc3a762)
 
 ![250606-0957-001](https://github.com/user-attachments/assets/cd13fedf-9652-464c-be81-92e46a3c0c9a)
 
@@ -37,6 +37,7 @@ In the `.storage` subdir you find a config.example.php copy it to config.php and
 ### Cleanup and Maintenance
 
 Currently the maint script is not done yet. So I temporary use a cronjob to clean very old stuff from the .storage directory.
+
 
 ```bash
 # cleanup short URL stuff
