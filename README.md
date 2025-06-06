@@ -1,5 +1,10 @@
 # tinyPHPshortener
-A tiny PHP based URL shortener with a flat file structure and basic authentication
+A tiny PHP based URL shortener with a flat file structure and basic authentication.
+
+![250606-0956-001](https://github.com/user-attachments/assets/03ae3105-4b59-4f52-8662-76e047aa9be0)
+
+![250606-0957-001](https://github.com/user-attachments/assets/cd13fedf-9652-464c-be81-92e46a3c0c9a)
+
 
 ## Setup
 
@@ -38,4 +43,6 @@ Currently the maint script is not done yet. So I temporary use a cronjob to clea
 50 4 * * * find /var/www/shortener/htdocs/.storage -type f -name "*.json" -mtime +365 -delete
 52 4 * * * find /var/www/shortener/htdocs/.storage -type d -empty -delete
 ```
+
+
 
