@@ -32,7 +32,7 @@ Currently the maint script is not done yet. So I temporary use a cronjob to clea
 
 ```bash
 # cleanup short URL stuff
-50 4 * * * find /var/www/shortener/htdocs/.storage -type f -mtime +380 -delete
+50 4 * * * find /var/www/shortener/htdocs/.storage -type f -name "*.json" -mtime +365 -delete
 52 4 * * * find /var/www/shortener/htdocs/.storage -type d -empty -delete
 ```
 
