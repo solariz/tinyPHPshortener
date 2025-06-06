@@ -1,6 +1,6 @@
 <div class="container p-2">
 <h1>Simple URL Shortener</h1>
-<p>planetlan simple URL Shortener. Makes long URLs shorter :)</p>
+<p>tinyPHPshortener - Makes long URLs shorter :)</p>
 </div>
 <div class="container bg-dark bg-gradient text-light p-3 shadow-lg rounded">
 <form action="#" method="POST" class="row g-4 needs-validation" novalidate>

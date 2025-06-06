@@ -1,6 +1,6 @@
 <div class="container p-2 col-md-4">
 <h1>Simple URL Shortener</h1>
-<p>simple URL Shortener. Makes long URLs shorter :)</p>
+<p>tinyPHPshortener - Makes long URLs shorter :)</p>
 </div>
 <div class="container col-md-4 bg-dark bg-gradient text-light p-3 shadow-lg rounded">
   <div class="col-md-12">
